@@ -1,0 +1,48 @@
+/* Light header */
+.nav-minimal {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+}
+
+/* Hero depth — soft blue washes */
+.wg-hero-mesh {
+  background-image: radial-gradient(900px 400px at 15% -10%, rgba(37, 99, 235, 0.09), transparent 55%),
+    radial-gradient(700px 350px at 95% 0%, rgba(59, 130, 246, 0.07), transparent 50%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Cards — subtle lift */
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px -12px rgba(15, 23, 42, 0.12);
+  border-color: rgba(148, 163, 184, 0.45);
+}
+
+.project-card .project-card-img {
+  transition: transform 0.45s ease;
+}
+
+.project-card:hover .project-card-img {
+  transform: scale(1.03);
+}
+
+/* Focus */
+.wg-focus:focus {
+  outline: none;
+}
+
+.wg-focus:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2563eb;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}

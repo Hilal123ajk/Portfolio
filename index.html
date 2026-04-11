@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebGrow Solutions — Web design & digital products</title>
+  <meta name="description" content="WebGrow Solutions builds responsive websites, booking experiences, and business platforms. Based in Pakistan, shipping worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-slate-100 font-sans text-base leading-relaxed text-slate-700 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:rounded-lg focus:bg-brand-700 focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+  <header class="nav-minimal fixed inset-x-0 top-0 z-[110] border-b border-slate-200/90">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-800 font-display text-sm font-bold text-white">W</span>
+        <span class="font-display text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">WebGrow<span class="text-brand-700"> Solutions</span></span>
+      </a>
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Primary">
+        <a href="index.html#projects" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Work</a>
+        <a href="index.html#about" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">About</a>
+        <a href="contact.html" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Contact</a>
+        <a href="contact.html" class="rounded-full bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-800">Start a project</a>
+      </nav>
+      <button type="button" id="menu-toggle" class="wg-focus relative z-[115] flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-800 md:hidden" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="1.5" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div
+    id="mobile-backdrop"
+    class="pointer-events-none fixed inset-0 z-[100] bg-slate-900/50 opacity-0 transition-opacity duration-300 md:hidden"
+    aria-hidden="true"
+  ></div>
+  <div
+    id="mobile-panel"
+    class="fixed inset-y-0 right-0 z-[105] flex min-h-screen w-[min(100%,20rem)] max-w-[100vw] translate-x-full flex-col border-l border-slate-200 bg-white shadow-2xl transition-transform duration-300 ease-out md:hidden"
+    role="dialog"
+    aria-label="Menu"
+  >
+    <nav class="mobile-panel-nav flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto overscroll-contain px-5 pb-10 pt-6" aria-label="Mobile">
+      <a href="index.html#main" class="mobile-nav-link rounded-xl px-4 py-3.5 text-base font-medium text-slate-800 hover:bg-slate-100">Home</a>
+      <a href="index.html#projects" class="mobile-nav-link rounded-xl px-4 py-3.5 text-base font-medium text-slate-800 hover:bg-slate-100">Work</a>
+      <a href="index.html#about" class="mobile-nav-link rounded-xl px-4 py-3.5 text-base font-medium text-slate-800 hover:bg-slate-100">About</a>
+      <a href="contact.html" class="mobile-nav-link rounded-xl px-4 py-3.5 text-base font-medium text-slate-800 hover:bg-slate-100">Contact</a>
+      <a href="contact.html" class="mobile-nav-link mt-3 rounded-full bg-brand-700 px-4 py-3.5 text-center text-base font-semibold text-white hover:bg-brand-800">Start a project</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="wg-hero-mesh relative border-b border-slate-200/80 px-4 pb-20 pt-24 sm:px-6 sm:pb-24 sm:pt-28 lg:px-8 lg:pb-28 lg:pt-32">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand-800">Web & product studio</p>
+        <h1 class="mt-5 font-display text-3xl font-bold leading-[1.15] tracking-tight text-slate-900 sm:text-4xl lg:text-[2.65rem]">
+          Digital experiences that <span class="text-brand-700">grow</span> your brand
+        </h1>
+        <p class="mx-auto mt-6 max-w-xl text-lg text-slate-600">Marketing sites, booking flows, and operations tools — fast, responsive, and straightforward to maintain.</p>
+        <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+          <a href="#projects" class="wg-focus inline-flex rounded-full bg-brand-700 px-7 py-3 text-sm font-semibold text-white shadow-md shadow-brand-700/25 transition hover:bg-brand-800">View work</a>
+          <a href="contact.html" class="wg-focus inline-flex rounded-full border border-slate-300 bg-white/90 px-7 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-slate-400 hover:bg-white">Contact</a>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+        <div class="rounded-xl border border-slate-200/90 bg-white/90 px-3 py-4 text-center shadow-sm ring-1 ring-slate-200/50 sm:py-5">
+          <p class="font-display text-xl font-bold text-slate-900 sm:text-2xl">4+</p>
+          <p class="mt-1 text-xs font-medium text-slate-500">Launches</p>
+        </div>
+        <div class="rounded-xl border border-slate-200/90 bg-white/90 px-3 py-4 text-center shadow-sm ring-1 ring-slate-200/50 sm:py-5">
+          <p class="font-display text-xl font-bold text-slate-900 sm:text-2xl">100%</p>
+          <p class="mt-1 text-xs font-medium text-slate-500">Responsive</p>
+        </div>
+        <div class="rounded-xl border border-slate-200/90 bg-white/90 px-3 py-4 text-center shadow-sm ring-1 ring-slate-200/50 sm:py-5">
+          <p class="font-display text-xl font-bold text-slate-900 sm:text-2xl">PK</p>
+          <p class="mt-1 text-xs font-medium text-slate-500">Worldwide</p>
+        </div>
+        <div class="rounded-xl border border-slate-200/90 bg-white/90 px-3 py-4 text-center shadow-sm ring-1 ring-slate-200/50 sm:py-5">
+          <p class="font-display text-xl font-bold text-slate-900 sm:text-2xl">24h</p>
+          <p class="mt-1 text-xs font-medium text-slate-500">Reply</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="scroll-mt-20 border-t border-slate-200/80 bg-gradient-to-b from-slate-100 to-white px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="h-1 w-10 rounded-full bg-brand-600" aria-hidden="true"></span>
+              <h2 class="font-display text-2xl font-bold text-slate-900 sm:text-3xl">Selected work</h2>
+            </div>
+            <p class="mt-3 max-w-xl text-slate-600">Reference, hospitality, food & beverage, and business software.</p>
+          </div>
+        </div>
+
+        <div class="mt-12 grid gap-7 sm:grid-cols-2 lg:gap-8">
+          <article class="project-card overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-md ring-1 ring-slate-200/40">
+            <a href="https://word-finder-pro.netlify.app/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2" aria-label="Lexicon — open live site">
+              <div class="aspect-[16/10] overflow-hidden border-b border-slate-100 bg-slate-100">
+                <img src="assets/images/lexicon.jpg" alt="" class="project-card-img h-full w-full object-cover" width="900" height="563" loading="lazy" decoding="async" />
+              </div>
+              <div class="p-5 sm:p-6">
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-md bg-brand-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-brand-800">Web app</span>
+                  <span class="rounded-md bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600">APIs</span>
+                </div>
+                <h3 class="mt-3 font-display text-lg font-bold text-slate-900 sm:text-xl">Lexicon</h3>
+                <p class="mt-2 text-[15px] leading-relaxed text-slate-600">Multilingual dictionary with language-aware results and a layout built for reading.</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">View live <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-md ring-1 ring-slate-200/40">
+            <a href="https://smart-stay-book.netlify.app/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2" aria-label="Northline Hotel — open live site">
+              <div class="aspect-[16/10] overflow-hidden border-b border-slate-100 bg-slate-100">
+                <img src="assets/images/hotel.jpg" alt="" class="project-card-img h-full w-full object-cover" width="900" height="563" loading="lazy" decoding="async" />
+              </div>
+              <div class="p-5 sm:p-6">
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-md bg-brand-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-brand-800">Hospitality</span>
+                  <span class="rounded-md bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600">Booking</span>
+                </div>
+                <h3 class="mt-3 font-display text-lg font-bold text-slate-900 sm:text-xl">Northline Hotel</h3>
+                <p class="mt-2 text-[15px] leading-relaxed text-slate-600">Boutique hotel site with rooms, booking flow, and mobile-first navigation.</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">View live <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-md ring-1 ring-slate-200/40">
+            <a href="https://coffe-icecream.netlify.app/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2" aria-label="Velvet Bean — open live site">
+              <div class="aspect-[16/10] overflow-hidden border-b border-slate-100 bg-slate-100">
+                <img src="assets/images/velvet-bean.jpg" alt="" class="project-card-img h-full w-full object-cover" width="900" height="563" loading="lazy" decoding="async" />
+              </div>
+              <div class="p-5 sm:p-6">
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-md bg-brand-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-brand-800">F&B</span>
+                  <span class="rounded-md bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600">Brand</span>
+                </div>
+                <h3 class="mt-3 font-display text-lg font-bold text-slate-900 sm:text-xl">Velvet Bean</h3>
+                <p class="mt-2 text-[15px] leading-relaxed text-slate-600">Coffee & ice cream brand with menu, stories, and contact flow.</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">View live <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-md ring-1 ring-slate-200/40">
+            <a href="https://revamp.jewelerease.com/ops/login" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-offset-2" aria-label="Jewelerease — open platform">
+              <div class="aspect-[16/10] overflow-hidden border-b border-slate-100 bg-slate-100">
+                <img src="assets/images/jewelry-erp.jpg" alt="" class="project-card-img h-full w-full object-cover" width="900" height="563" loading="lazy" decoding="async" />
+              </div>
+              <div class="p-5 sm:p-6">
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-md bg-brand-50 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-brand-800">ERP</span>
+                  <span class="rounded-md bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600">B2B</span>
+                </div>
+                <h3 class="mt-3 font-display text-lg font-bold text-slate-900 sm:text-xl">Jewelerease</h3>
+                <p class="mt-2 text-[15px] leading-relaxed text-slate-600">Jewelry operations — secure sign-in and tools for retail and workshop teams.</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">Open platform <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="scroll-mt-20 border-t border-slate-200/80 bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="h-1 w-10 rounded-full bg-brand-600" aria-hidden="true"></span>
+            <h2 class="font-display text-2xl font-bold text-slate-900 sm:text-3xl">How we work</h2>
+          </div>
+          <p class="mt-4 text-lg text-slate-600">Clear structure, accessible markup, and layouts that behave from phone to desktop. We stay aligned on goals and timelines so you get a product you can run with.</p>
+          <ul class="mt-8 space-y-4 text-slate-700">
+            <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span><span>UI matched to your sector and brand voice</span></li>
+            <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span><span>Clean handoff and sensible code organization</span></li>
+            <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span><span>Direct email and WhatsApp — quick answers</span></li>
+          </ul>
+        </div>
+        <blockquote class="rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white p-7 shadow-md ring-1 ring-slate-200/50 sm:p-9">
+          <p class="font-display text-lg font-semibold leading-snug text-slate-900 sm:text-xl">Ship what users see first, then refine with real feedback.</p>
+          <p class="mt-5 text-sm font-medium text-slate-500">WebGrow Solutions</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="bg-slate-100/90 px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div class="mx-auto max-w-2xl rounded-2xl border border-slate-200/90 bg-gradient-to-br from-brand-700 to-brand-900 px-6 py-11 text-center shadow-lg shadow-brand-900/20 sm:px-10 sm:py-14">
+        <h2 class="font-display text-xl font-bold text-white sm:text-2xl">Next project</h2>
+        <p class="mx-auto mt-3 max-w-md text-sm text-brand-100 sm:text-base">Share scope and timeline — we’ll reply with next steps.</p>
+        <a href="contact.html" class="wg-focus mt-7 inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-brand-800 shadow-md transition hover:bg-brand-50">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 bg-slate-900 px-4 py-12 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
+      <div>
+        <p class="font-display text-lg font-semibold text-white">WebGrow Solutions</p>
+        <p class="mt-2 max-w-xs text-sm text-slate-400">Websites and business tools.</p>
+      </div>
+      <div class="flex flex-col gap-2 text-sm">
+        <a href="mailto:webgrowsolutionz@gmail.com" class="text-slate-300 transition hover:text-white">webgrowsolutionz@gmail.com</a>
+        <a href="mailto:hilaldev123@gmail.com" class="text-slate-300 transition hover:text-white">hilaldev123@gmail.com</a>
+        <a href="https://wa.me/923041918465" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">+92 304 1918465</a>
+        <a href="https://wa.me/923096773855" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">+92 309 6773855</a>
+      </div>
+    </div>
+    <p class="mx-auto mt-10 max-w-6xl border-t border-slate-700/80 pt-8 text-center text-xs text-slate-500">© <span id="year"></span> WebGrow Solutions</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

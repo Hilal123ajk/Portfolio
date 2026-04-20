@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="563" viewBox="0 0 900 563" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Healthcare &amp; technology concept</title>
+  <desc id="desc">Abstract illustration for a health provider platform demo</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="563" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eff6ff"/>
+      <stop offset="0.5" stop-color="#f0fdf4"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="450" y1="120" x2="450" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="563" fill="url(#bg)"/>
+  <circle cx="450" cy="280" r="180" fill="url(#pulse)"/>
+  <path d="M450 160v240M330 280h240" stroke="#2563eb" stroke-width="24" stroke-linecap="round" opacity="0.9"/>
+  <rect x="200" y="380" width="500" height="100" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="230" y="405" width="120" height="50" rx="8" fill="#dbeafe"/>
+  <rect x="370" y="405" width="120" height="50" rx="8" fill="#dcfce7"/>
+  <rect x="510" y="405" width="120" height="50" rx="8" fill="#e0e7ff"/>
+  <text x="450" y="520" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Health · Providers · Tech</text>
+</svg>
